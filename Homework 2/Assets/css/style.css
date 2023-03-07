@@ -1,0 +1,61 @@
+header {
+    text-align: center;
+    background: #1066b6;
+    color: #fff;
+  }
+  nav {
+	display: flex;
+	background-color: #2d92cd;
+  }
+  nav a { color: #191c1f;
+    padding: 14px 20px;
+    text-decoration: color
+    text-align: center;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Add global styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #fff;
+}
+/* Add styles for your content */
+/* Example: Header */
+header {
+	background-color: #F2F2F2;
+	padding: 20px;
+}
+header h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+header p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+/* Example: Navigation menu */
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+}
+nav li {
+	margin-right: 20px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
