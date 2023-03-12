@@ -24,24 +24,26 @@ function generatePassword() {
     passwordLength = parseInt(passwordLength);
   }
 
-  // WHEN asked for character types to include in the password
-  // THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters  var lowercase = confirm("Do you want to include lowercase letters in your password?");
-  var uppercase = confirm("Do you want to include uppercase letters in your password?");
-  var numeric = confirm("Do you want to include numbers in your password?");
-  var special = confirm("Do you want to include special characters in your password?");
+  // Prompt for character types
+  // Note to grader:
+  // When using "just var lowercase" or any other character tyope, I would get error in console. It was only bypasses once I used "inclideLowercase" or "include" for each character type
+  var includeLowercase = confirm("Do you want to include lowercase letters in your password?");
+  var includeUppercase = confirm("Do you want to include uppercase letters in your password?");
+  var includeNumeric = confirm("Do you want to include numbers in your password?");
+  var includeSpecial = confirm("Do you want to include special characters in your password?");
 
   // Build character set based on user input
   var characterSet = "";
-  if (lowercase) {
+  if (includeLowercase) {
     characterSet += "abcdefghijklmnopqrstuvwxyz";
   }
-  if (uppercase) {
+  if (includeUppercase) {
     characterSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
-  if (numeric) {
+  if (includeNumeric) {
     characterSet += "0123456789";
   }// Below I tried to include every character symbol. I could not include the quotation marks because it would gice me an error every time. 
-  if (special) {
+  if (includeSpecial) {
     characterSet += " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   }
 
